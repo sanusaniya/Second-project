@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SECOND PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        h2,
+        h3 {
+        font-weight: 400;
+        }
+
+        header::before {
+            background: url("") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .navigation {
+            display: flex;
+            top: 10px;
+            margin: 0 25px 25px;
+            color: black;
+        }
+
+        .navigation li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin: 0 59px;
+            font-size: 20px;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .advertise {
+            background-color: rgb(228, 24, 92);
+            color: white;
+            border: 2px;
+            margin: 3px, 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .advertise h1 {
+            font-size: 1rem;
+        }
+
+        .container {
+            text-align: center;
+            padding: 15px;
+        }
+
+        #slider {
+            height: 55vh;
+            width: 100%;
+            background-image: url(images/NEW\ ARRIVALS.webp);
+            background-repeat: no-repeat;
+            transition: 1s;
+            animation-name: animate;
+            animation-direction: alternate-reverse;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+            animation-duration: 30s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                background-image: url(images/BUY_3_PAIRS_FOR_1000-_5_8dc50170-b27d-46ad-9528-b076d1e8f8fa_1400x.webp);
+            }
+
+            20% {
+                background-image: url(images/NEW\ ARRIVALS.webp);
+            }
+
+            40% {
+                background-image: url(images/BUY_3_PAIRS_FOR_1000-_5_8dc50170-b27d-46ad-9528-b076d1e8f8fa_1400x.webp);
+            }
+
+            60% {
+                background-image: url(images/NEW\ ARRIVALS.webp);
+            }
+
+            80% {
+                background-image: url(images/BUY_3_PAIRS_FOR_1000-_5_8dc50170-b27d-46ad-9528-b076d1e8f8fa_1400x.webp);
+            }
+
+            100% {
+                background-image: url(images/NEW\ ARRIVALS.webp);
+            }
+        }
+
+        .haldi-mehndi h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        img {
+            padding: 7px;
+        }
+
+        .shop-by-collection h3 {
+            padding: 3px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .collection .sb-collection,
+        .img2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .Shop-by-Trend h3 {
+            padding: 3px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .Budget-friendly-jewellery h3 {
+            padding: 3px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .Budget-friendly-jewellery .budget {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .FOLLOW-US-ON-INSTAGRAM h3 {
+            padding: 0px;
+            text-align: center;
+        }
+
+        .instagram {
+            text-align: center;
+            color: deeppink;
+            font-size: 40px;
+
+        }
+
+
+        .fashion .web {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        .fashion .web img {
+            height: 305px;
+            width: 230px;
+
+        }
+
+        .fashion .web :hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+
+        .LET-CUSTOMER-SPEAK-FOR-US {
+            margin-left: 152px;
+        }
+
+        .box {
+            display: flex;
+            gap: 60px;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 0px 10px;
+            font-size: 10px;
+        }
+
+        .star2 {
+            position: relative;
+            top: 65px;
+            font-size: 12px;
+        }
+
+        p.para {
+            position: relative;
+            bottom: 40%;
+            font-size: 15px;
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 0px 10px;
+            font-size: 10px;
+        }
+
+        .review1 {
+            position: relative;
+            top: 65px;
+            font-size: 12px;
+        }
+
+        p.para1 {
+            position: relative;
+            bottom: 40%;
+            font-size: 15px;
+        }
+
+        .box3 {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 0px 10px;
+            font-size: 10px;
+        }
+
+        .public1 {
+            position: relative;
+            top: 65px;
+            font-size: 12px;
+        }
+
+        p.para2 {
+            position: relative;
+            bottom: 40%;
+            font-size: 15px;
+        }
+
+        .box4 {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            padding: 0px 10px;
+            font-size: 10px;
+        }
+
+        .post1 {
+            position: relative;
+            top: 65px;
+            font-size: 12px;
+        }
+
+        p.para3 {
+            position: relative;
+            bottom: 40%;
+            font-size: 15px;
+        }
+
+        .fa-star:before {
+            content: "\f005";
+            border: 2px solid rgb(241, 55, 142);
+            background-color: rgb(241, 55, 142);
+            color: white;
+        }
+
+        .BLOCK-POST h3 {
+            text-align: center;
+            padding: 40px;
+            font-size: 30px;
+        }
+
+        .block .p {
+            text-align: center;
+        }
+
+        .book {
+            width: 100%;
+            display: flex;
+            font-size: 19px;
+            gap: 60px;
+            font-weight: 300;
+        }
+
+        .block,
+        .block1,
+        .block2 {
+            width: 40%;
+
+        }
+
+        section.BLOCK-POST {
+            width: 85%;
+            margin: auto;
+        }
+
+        .btnview {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0px;
+            font-size: 40px;
+            height: 80px;
+            border: rgb(146, 42, 42);
+        }
+
+        .btnview button {
+            height: 50px;
+            width: 200px;
+            font-size: 15px;
+            color: white;
+            background-color: brown;
+        }
+
+        .btnview button:hover {
+            background-color: white;
+            color: brown;
+        }
+
+        .POPULAR-SEARCHES {
+            text-align: center;
+
+        }
+
+        .content ul {
+            display: flex;
+            text-decoration: underline;
+            flex-wrap: wrap;
+        }
+
+        .content ul li {
+            margin: 10px;
+        }
+
+        .foothead {
+            display: flex;
+            margin: 50px;
+
+        }
+
+        .foothead .foothead-1,
+        .foothead-2 {
+            width: 262px;
+            padding: 10px;
+            line-height: 35px;
+        }
+
+        .foothead-2 input {
+            width: 90%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        view {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0px;
+            font-size: 40px;
+            height: 40px;
+            border: rgb(146, 42, 42);
+        }
+
+        .view button {
+            height: 40px;
+            width: 120px;
+            color: white;
+            background-color: brown;
+            margin: 5px;
+        }
+
+        .view button:hover {
+            background-color: white;
+            color: brown;
+        }
+
+        .foothead-3 p {
+            line-height: 25px;
+            margin: 10px;
+            width: 320px;
+        }
+
+        .foothead {
+            flex-basis: 400px;
+        }
+
+        .foothead-4 {
+            padding: 10px;
+        }
+
+        .foothead-1 h4 {
+            position: relative;
+            left: 35px;
+        }
+
+        .foothead-3 h4 {
+            position: relative;
+            left: 10px;
+        }
+
+        .CUSTOMER {
+            padding: 50px 0px;
+        }
+
+        i.fa-brands.fa-facebook-f {
+            color: black;
+            font-size: 15px;
+            margin-right: 30px;
+
+        }
+
+        i.fa-brands.fa-twitter {
+            color: black;
+            font-size: 15px;
+            margin-right: 15px;
+        }
+
+        i.fa-brands.fa-instagram {
+            color: black;
+            font-size: 15px;
+            margin-left: 20px;
+        }
+
+        i.fa-brands.fa-square-pinterest {
+            color: black;
+            font-size: 15px;
+            margin-left: 35px;
+        }
+
+        i.fa-brands.fa-youtube {
+            color: black;
+            font-size: 15px;
+            margin-left: 35px;
+        }
+
+        i.fa-brands.fa-linkedin {
+            color: black;
+            margin-left: 30px;
+        }
+
+        .end {
+            margin-left: 90px;
+        }
+    </Style>
+</head>
+
+<body>
+    <header>
+        <Section class="advertise">
+            <h1>FEEE SHOPPING ON PREPAID ORDER ABOVE 699/-ON DOMESTIC ORDERS</h1>
+        </section>
+    </header>
+    <header>
+        <div class="container">
+            <img src="images/puljadi.webp" alt="logo">
+        </div>
+
+        <div class="icon">
+            <i class="fa fa-user"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ui class="navigation">
+            <li class="item">SHOP NY COLLECTION</li>
+            <li class="item">JEWELLERY</li>
+            <li class="item">HANDMADE JEWELLERY</li>
+            <li class="item">BAGS</li>
+            <li class="item">SUNGLASSES</li>
+            <li class="item">3 EARINGS FOR 1000</li>
+            <li class="item">3 NECKLACE FOR 1500</li>
+            <li class="item">FOOTWEAR</li>
+            <li class="item">VISIT STORE</li>
+            </ul>
+    </nav>
+    <div id="slider"></div>
+    <section class="haldi-mehndi">
+        <h2>HALDI -MEHENDI JEWELLERY</h2>
+        <div class="hm-jewellery">
+            <img src="images/earring.png" alt="">
+            <img src="images/NECKLACE SET.png" alt="">
+            <img src="images/MAANTIGA.png" alt="">
+            <img src="images/BANGLES.png" alt="">
+            <img src="images/SHEESHPHOOL.png" alt="">
+        </div>
+    </section>
+    <section class="shop-by-collection">
+        <h3>SHOP BY COLLECTION</h3>
+        <div class="collection">
+            <div class="sb-collection">
+                <img src="images/KUNDAN JEWELLERY.png" alt="">
+                <img src="images/AMERICAN DIAMOND JEWELLERY.png" alt="">
+                <img src="images/OXIDISED JEWELLERY.png" alt="">
+            </div>
+            <div class="img2">
+                <img src="images/TEMPLE-JEWELLERY.png" alt="">
+                <img src="images/FASHION JEWELLERY.png" alt="">
+                <img src="images/BRIDAL JEWELLERY.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="Shop-by-Trend">
+        <h3>SHOP BY TREND</h3>
+        <div class="trend">
+            <img src="images/HALDI MEHENDI TREND.webp" alt="">
+            <img src="images/BRIDAL TREND.png" alt="">
+        </div>
+    </section>
+
+    <section class="Budget-friendly-jewellery">
+        <h3>BUDGET BY TREND</h3>
+        <div class="budget">
+            <img src="images/UNDER 1000.png" alt="">
+            <img src="images/UNDER 2000.png" alt="">
+            <img src="images/UNDER 2500.png" alt="">
+        </div>
+    </section>
+    <section class="FOLLOW-US-ON-INSTAGRAM">
+        <h3>FOLLOW US ON INSTAGRAM</h3>
+        <div class="instagram">
+            <p>@P H U L J H A D I</p>
+            <div class="fashion">
+                <div class="web">
+                    <img src="images/5 things about.jfif" alt="">
+                    <img src="images/Aania earings.jfif" alt="">
+                    <img src="images/Aantika earings.png" alt="">
+                    <img src="images/bangels.jfif" alt="">
+                    <img src="images/BUY 3 PAIR FOR 1000.jfif" alt="">
+                    <img src="images/by 3 neckles for 1500.jfif" alt="">
+                    <img src="images/BY 3 NECKLES.jfif" alt="">
+                    <img src="images/contrast earings.png" alt="">
+                    <img src="images/damshi earings.jfif" alt="">
+                    <img src="images/earing collection.jfif" alt="">
+                    <img src="images/earings by 3.jfif" alt="">
+                    <img src="images/earings demo.jfif" alt="">
+                    <img src="images/friendship day sale.jfif" alt="">
+                    <img src="images/ethnic earing.jfif" alt="">
+                    <img src="images/GOLDEN EARINGS.png" alt="">
+                    <img src="images/gunika jumka.png" alt="">
+                    <img src="images/pink earing.png" alt="">
+                    <img src="images/mitakshi neckles set.jfif" alt="">
+                    <img src="images/mradushi polki jumka.png" alt="">
+                    <img src="images/NAVRATHRI SEASON.jfif" alt="">
+                    <img src="images/NEW ARRIVALS.webp" alt="">
+                    <img src="images/on ethnic earings.jfif" alt="">
+                    <img src="images/pink earing.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="LET-CUSTOMER-SPEAK-FOR-US">
+        <h3>LET CUSTOMER SPEAK FOR US</h3>
+        <div class="CUSTOMER">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="star ">
+                    <h1><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h1>
+                    <h2>Quality</h2>
+                </div>
+
+                <div class="star2">
+                    <h2>Mansi</h2>
+                    <p>09/09/24</p>
+                </div>
+                <p class="para">The quality the piece is much better than picture</p>
+
+            </div>
+            <div class="box2">
+                <div class="review">
+                    <h1><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h1>
+                    <h2>Earings</h2>
+                </div>
+
+                <div class="review1">
+                    <h2>Juthika Das</h2>
+                    <p>09/16/24</p>
+                </div>
+                <p class="para1">Earrings are very unique and beautiful. Loved it. Every time I buy any product it just
+                    bring</p>
+            </div>
+
+            <div class="box3">
+                <div class="public">
+                    <h1><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h1>
+                    <h2>Osum</h2>
+                </div>
+
+                <div class="public1">
+                    <h2>Bindya Jain</h2>
+                    <p>09/16/24</p>
+                </div>
+                <p class="para2">Beautiful and elegant</p>
+            </div>
+
+            <div class="box4">
+                <div class="post">
+                    <h1><i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </h1>
+                    <h2>Zhunkas</h2>
+                </div>
+
+                <div class="post1">
+                    <h2>Sonam Patil</h2>
+                    <p>09/12/24</p>
+                </div>
+                <p class="para3">They are spectacular.</p>
+            </div>
+    </section>
+    <section class="BLOCK-POST">
+        <h3>BLOCK POST</h3>
+        <div class="book">
+            <div class="block">
+                <p>AFFORDABLE ELEGANCE : WHY OXIDISED EARRINGS UNDER ₹350 ARE A MUST-HAVE</p>
+                <p> Oxidised earrings are a popular fashion accessory that offers a unique blend of traditional and
+                    moderndesign. These earrings are versatile, stylis...</p>
+                <a href="#">Readmore</a>
+            </div>
+            <div class="block1">
+                <div class="tag">
+                    <img src="block post.png" alt="">
+
+                </div>
+                <div class="paragraph">
+                    <p>THE CHARM OF HANDMADE RAKHI : A TRADITION OF LOVE AND CRAFTSMANSHIP </p>
+                    <p> Raksha Bandhan, a cherished Indian festival, celebrates the enduring bond between brothers and
+                        sisters. The central ritual of this festival involve...</p>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+
+            <div class="block2">
+                <div class="paragraph1">
+                    <p>WHAT YOU SEEK, WHEN YOUR SEARCH- "JEWELLERY SHOP NEAR ME"</p>
+                    <p> When searching for a "jewellery shop near me" you are typically seeking local stores that offer
+                        a variety of jewellery items, such as rings, ne...</p>
+                    <a href="#">Readmore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="btnview">
+        <button>
+            VIEW ALL ARTICLES
+        </button>
+    </div>
+    <section class="POPULAR-SEARCHES">
+        <div class="bold">
+            <h3>POPULAR SEARCHES</h3>
+            <div class="popular">
+                <div class="content">
+                    <ul type="none">
+                        <li class="item1">Haldi Jewellery</li>
+                        <li class="item2">Handmade Jewellery</li>
+                        <li class="item3">Oxidised Jewellery</li>
+                        <li class="item4">German Silver Jewellery</li>
+                        <li class="item5">Kundan Jewellery</li>
+                        <li class="item6">Bridal Jewellery </li>
+                        <li class="item7">Wedding Jewellery</li>
+                        <li class="item8">American Diamond Jewellery</li>
+                        <li class="item9">Fashion Jewellery</li>
+                        <li class="item10">Meenakari Jewellery</li>
+                        <li class="item11">Nose Pin</li>
+                        <li class="item12">Nath</li>
+                        <li class="item13">Bags</li>
+                        <li class="item14">Mangalsutra</li>
+                        <li class="item14">Sunglasses</li>
+                        <li class="item15">Necklace</li>
+                        <li class="item16">Rings</li>
+                        <li class="item17">Bracelet</li>
+                        <li class="item18">Anklet</li>
+                        <li class="item19">Earrings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <footer>
+            <div class="foothead">
+                <div class="foothead-1">
+                    <h4>QUICK LINKS</h4>
+                    <ul type="none">
+                        <li> Our story </li>
+                        <li> Contact us</li>
+                        <li> Shipping on Delivery</li>
+                        <li> Refund and Exchange policy </li>
+                        <li> Term and condition </li>
+                        <li> Privacy policy </li>
+                        <li> Blogs </li>
+                    </ul>
+
+                </div>
+                <div class="foothead-2">
+                    <h4>NEWSLETTER</h4>
+                    <P>Subscribe to receive updates, access to exclusive deals, and more.</P>
+
+                    <input type="email " id="Enter Your email address" name="Enter Your email address"
+                        placeholder="Enter Your email address" required>
+                    <div class="view">
+                        <button>
+                            SUBSCRIBE
+                        </button>
+                    </div>
+
+                </div>
+                <div class="foothead-3">
+                    <h4>PHULJHADI</h4>
+                    <P>Welcome to Phuljhadi, a radiant oasis in the world of artificial jewellery. Named after the
+                        vibrant festival of lights, Phuljhadi aspires to illuminate every occasion with its dazzling
+                        Artifical Jewellery Collections. Our online platform is a treasure trove for those seeking
+                        distinctive and stylish artificial jewellery that effortlessly complements diverse tastes and
+                        occasions, just like the name suggests – Phuljhadi, where elegance is endless and affordability
+                        is abundant.</P>
+                </div>
+                <div class="foothead-4">
+                    <h4> ABOUT THE SHOP</h4>
+
+                    <p><strong>Address</strong>113-A, 3rd floor, shahpurjat, New Delhi - 110049</p>
+                    <p><strong>Email</strong>
+                        support@phuljhadi.com</p>
+
+                    <p><strong> Contact </strong> +91-8077021530</p>
+                    <div class="media">
+                        <i class="fa-brands fa-facebook-f"></i></a>
+                        <i class="fa-brands fa-twitter"></i></a>
+                        <i class="fa-brands fa-instagram"></i></a>
+                        <i class="fa-brands fa-square-pinterest"></i></a>
+                        <i class="fa-brands fa-youtube"></i></a>
+                        <i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <h4>@PHULJHADI</h4>
+                <P>Designed and Developed by <strong>Messold Technologies</strong></P>
+                <P>Re-Designed by <strong>S Saniya Fathima</strong></P>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>
