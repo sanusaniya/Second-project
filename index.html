@@ -22,8 +22,6 @@
         }
 
         header::before {
-            background: url("") no-repeat center center/cover;
-            position: absolute;
             top: 0;
             left: 0%;
             width: 100%;
@@ -34,24 +32,27 @@
 
         .navigation {
             display: flex;
-            top: 10px;
-            margin: 0 25px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 21px;
             color: black;
         }
 
         .navigation li {
             list-style: none;
-            padding: 20px 23px;
+            font-size: 15px;
+
         }
 
         .icon {
             display: flex;
             justify-content: flex-end;
-            gap: 25px;
-            margin: 0 59px;
-            font-size: 20px;
             position: relative;
-            bottom: 60px;
+            bottom: 44px;
+            margin-right: 50px;
+            font-size: 25px;
+            gap: 20px;
         }
 
         .advertise {
@@ -71,7 +72,7 @@
 
         .container {
             text-align: center;
-            padding: 15px;
+
         }
 
         #slider {
@@ -79,6 +80,7 @@
             width: 100%;
             background-image: url(images/NEW\ ARRIVALS.webp);
             background-repeat: no-repeat;
+            background-position: center;
             transition: 1s;
             animation-name: animate;
             animation-direction: alternate-reverse;
@@ -119,7 +121,6 @@
             gap: 10px;
             display: flex;
             margin: 20px;
-            /* padding: 50px; */
             align-items: center;
             justify-content: center;
         }
@@ -129,10 +130,12 @@
         .haldi-mehndi h2 {
             text-align: center;
             font-size: 40px;
+
         }
 
         img {
             padding: 7px;
+
         }
 
         .shop-by-collection h3 {
@@ -145,7 +148,6 @@
         .img2 {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 20px;
         }
 
@@ -158,11 +160,13 @@
         .haldi-mehndi .hm-jewellery,
         .Shop-by-Trend .trend {
             display: flex;
-            text-align: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .Budget-friendly-jewellery h3 {
-            padding: 3px;
+            gap: 20px;
             text-align: center;
             font-size: 40px;
         }
@@ -194,6 +198,8 @@
 
         .fashion .web {
             display: flex;
+            gap: 20px;
+            justify-content: center;
             flex-direction: row;
             overflow: hidden;
         }
@@ -351,6 +357,7 @@
             width: 200px;
             font-size: 15px;
             color: white;
+            border: none;
             background-color: brown;
         }
 
@@ -407,6 +414,7 @@
             height: 40px;
             width: 120px;
             color: white;
+            border: none;
             background-color: brown;
             margin: 5px;
         }
@@ -494,16 +502,18 @@
     </header>
     <header>
         <div class="container">
-            <img src="images/puljadi.webp" alt="logo">
+            <div class="blank"></div>
+            <div class="logo-image">
+                <img src="images/puljadi.webp" alt="logo">
+            </div>
+            <div class="icon">
+                <i class="fa fa-user"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
         </div>
 
-        <div class="icon">
-            <i class="fa fa-user"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa fa-heart"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
-
-        </div>
     </header>
 
     <nav class="navbar">
@@ -577,7 +587,7 @@
                     <img src="images/Aania earings.jfif" alt="">
                     <img src="images/Aantika earings.png" alt="">
                     <img src="images/bangels.jfif" alt="">
-                    <img src="images/BUY 3 PAIR FOR 1000.jfif" alt="">
+                    <!-- <img src="images/BUY 3 PAIR FOR 1000.jfif" alt="">
                     <img src="images/by 3 neckles for 1500.jfif" alt="">
                     <img src="images/BY 3 NECKLES.jfif" alt="">
                     <img src="images/contrast earings.png" alt="">
@@ -595,7 +605,7 @@
                     <img src="images/NAVRATHRI SEASON.jfif" alt="">
                     <img src="images/NEW ARRIVALS.webp" alt="">
                     <img src="images/on ethnic earings.jfif" alt="">
-                    <img src="images/pink earing.png" alt="">
+                    <img src="images/pink earing.png" alt=""> -->
                 </div>
             </div>
         </div>
@@ -619,11 +629,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </h1>
-                    <h2>Quality</h2>
+                    <h2><strong>Quality</strong></h2>
                 </div>
 
                 <div class="star2">
-                    <h2>Mansi</h2>
+                    <h2><strong>Mansi</strong></h2>
                     <p>09/09/24</p>
                 </div>
                 <p class="para">The quality the piece is much better than picture</p>
@@ -637,11 +647,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </h1>
-                    <h2>Earings</h2>
+                    <h2><strong>Earings</strong></h2>
                 </div>
 
                 <div class="review1">
-                    <h2>Juthika Das</h2>
+                    <h2><strong>Juthika Das</strong></h2>
                     <p>09/16/24</p>
                 </div>
                 <p class="para1">Earrings are very unique and beautiful. Loved it. Every time I buy any product it just
@@ -656,11 +666,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </h1>
-                    <h2>Osum</h2>
+                    <h2><strong>Osum</strong></h2>
                 </div>
 
                 <div class="public1">
-                    <h2>Bindya Jain</h2>
+                    <h2><strong>Bindya Jain</strong></h2>
                     <p>09/16/24</p>
                 </div>
                 <p class="para2">Beautiful and elegant</p>
@@ -674,11 +684,11 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </h1>
-                    <h2>Zhunkas</h2>
+                    <h2><strong>Zhunkas</strong></h2>
                 </div>
 
                 <div class="post1">
-                    <h2>Sonam Patil</h2>
+                    <h2><strong>Sonam Patil</strong></h2>
                     <p>09/12/24</p>
                 </div>
                 <p class="para3">They are spectacular.</p>
