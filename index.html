@@ -11,14 +11,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
         body {
-            margin: 0;
-            padding: 0;
+            /* margin: 0; */
+            /* padding: 0; */
             font-family: "Lato", sans-serif;
+            font-weight: 300;
         }
 
         h2,
         h3 {
-            font-weight: 400;
+            font-weight: 300;
         }
 
         header::before {
@@ -35,7 +36,6 @@
             justify-content: center;
             align-items: center;
             gap: 25px;
-            padding: 21px;
             color: black;
         }
 
@@ -120,7 +120,6 @@
         .offer {
             gap: 10px;
             display: flex;
-            margin: 20px;
             align-items: center;
             justify-content: center;
         }
@@ -129,19 +128,22 @@
 
         .haldi-mehndi h2 {
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
 
         }
 
-        img {
+        .BLOG-POSTS .book .blog1 .tag img {
             padding: 7px;
+            transition-duration: 2s;
+        }
 
+        .BLOG-POSTS .book .blog1 .tag img:hover {
+            transform: scale(1.1);
         }
 
         .shop-by-collection h3 {
-            padding: 3px;
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .collection .sb-collection,
@@ -152,23 +154,24 @@
         }
 
         .Shop-by-Trend h3 {
-            padding: 3px;
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .haldi-mehndi .hm-jewellery,
         .Shop-by-Trend .trend {
             display: flex;
             gap: 5px;
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
             justify-content: center;
         }
 
         .Budget-friendly-jewellery h3 {
+            display: flex;
             gap: 20px;
+            justify-content: center;
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .Budget-friendly-jewellery .budget {
@@ -178,16 +181,17 @@
         }
 
         .FOLLOW-US-ON-INSTAGRAM h3 {
-            padding: 0px;
             text-align: center;
-            margin: 60px 0 0;
+            margin: 50px 0 0;
+            font-size: 15px;
         }
 
         .instagram {
             text-align: center;
-            color: deeppink;
-            font-size: 40px;
-
+            color: #e5017a;
+            font-size: 30px;
+            margin-top: -15px;
+            font-weight: 400;
         }
 
         .shop-by-collection .collection {
@@ -198,15 +202,18 @@
 
         .fashion .web {
             display: flex;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
-            flex-direction: row;
+            /* flex-direction: row; */
             overflow: hidden;
         }
 
         .fashion .web img {
-            height: 305px;
-            width: 230px;
+            height: 320px;
+            /* height: 100%; */
+            /* width: 100px; */
+            width: 280px;
+            object-fit: cover;
 
         }
 
@@ -218,7 +225,13 @@
 
         .LET-CUSTOMER-SPEAK-FOR-US {
             margin: 30px 30px 30px 86px;
-            padding: 60px;
+            padding: 20px;
+            /* text-decoration: underline; */
+        }
+
+        .CUSTOMER {
+            padding: 8px 0px;
+            text-decoration: underline;
         }
 
         .box {
@@ -229,7 +242,7 @@
         .box1 {
             height: 200px;
             width: 200px;
-            border: 1px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 0px 10px;
             font-size: 10px;
         }
@@ -249,7 +262,7 @@
         .box2 {
             height: 200px;
             width: 200px;
-            border: 1px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 0px 10px;
             font-size: 10px;
         }
@@ -269,7 +282,7 @@
         .box3 {
             height: 200px;
             width: 200px;
-            border: 1px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 0px 10px;
             font-size: 10px;
         }
@@ -289,7 +302,7 @@
         .box4 {
             height: 200px;
             width: 200px;
-            border: 1px solid;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             padding: 0px 10px;
             font-size: 10px;
         }
@@ -313,13 +326,12 @@
             color: white;
         }
 
-        .BLOCK-POST h3 {
+        .BLOG-POSTS h3 {
             text-align: center;
-            padding: 0px;
             font-size: 30px;
         }
 
-        .block .p {
+        .blog .p {
             text-align: center;
         }
 
@@ -331,14 +343,14 @@
             font-weight: 300;
         }
 
-        .block,
-        .block1,
-        .block2 {
+        .blog,
+        .blog1,
+        .blog2 {
             width: 40%;
 
         }
 
-        section.BLOCK-POST {
+        section.BLOG-POST {
             width: 85%;
             margin: auto;
         }
@@ -368,7 +380,10 @@
 
         .POPULAR-SEARCHES {
             text-align: center;
+        }
 
+        .BLOG-POSTS {
+            margin: 6%;
         }
 
         .content ul {
@@ -383,20 +398,20 @@
 
         .foothead {
             display: flex;
-            margin: 50px;
-
+            margin: 7%;
+            gap: 60px;
         }
 
         .foothead .foothead-1,
         .foothead-2 {
-            width: 262px;
-            padding: 10px;
+            width: 265px;
+            /* padding: 0 10px 10px 10px; */
             line-height: 35px;
         }
 
         .foothead-2 input {
             width: 90%;
-            padding: 10px;
+            padding: 10px 4px;
             box-sizing: border-box;
             margin: 5px;
         }
@@ -435,7 +450,7 @@
         }
 
         .foothead-4 {
-            padding: 10px;
+            /* padding: 0 10px 10px 10px; */
         }
 
         .foothead-1 h4 {
@@ -448,9 +463,9 @@
             left: 10px;
         }
 
-        .CUSTOMER {
+        /* .CUSTOMER {
             padding: 15px 0px;
-        }
+        } */
 
         i.fa-brands.fa-facebook-f {
             color: black;
@@ -490,6 +505,12 @@
 
         .end {
             margin-left: 90px;
+        }
+
+        @media (min-width: 300px) {
+            .container {}
+
+
         }
     </Style>
 </head>
@@ -694,16 +715,16 @@
                 <p class="para3">They are spectacular.</p>
             </div>
     </section>
-    <section class="BLOCK-POST">
-        <h3>BLOCK POST</h3>
+    <section class="BLOG-POSTS">
+        <h3>BLOG POSTS</h3>
         <div class="book">
-            <div class="block">
+            <div class="blog">
                 <p>AFFORDABLE ELEGANCE : WHY OXIDISED EARRINGS UNDER ₹350 ARE A MUST-HAVE</p>
                 <p> Oxidised earrings are a popular fashion accessory that offers a unique blend of traditional and
                     moderndesign. These earrings are versatile, stylis...</p>
                 <a href="#">Readmore</a>
             </div>
-            <div class="block1">
+            <div class="blog1">
                 <div class="tag">
                     <img src="block post.png" alt="">
 
@@ -716,7 +737,7 @@
                 </div>
             </div>
 
-            <div class="block2">
+            <div class="blog2">
                 <div class="paragraph1">
                     <p>WHAT YOU SEEK, WHEN YOUR SEARCH- "JEWELLERY SHOP NEAR ME"</p>
                     <p> When searching for a "jewellery shop near me" you are typically seeking local stores that offer
